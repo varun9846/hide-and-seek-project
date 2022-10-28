@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide and seek</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> Hide And Seek Game</h1>
+    <nav class="topnav">
+        
+            <a href="level1.html">Level-1 </a>
+            <a href="level2.html">Level-2 </a>
+            <a href="level3.html">Level-3 </a>
+        
+    </nav>
+    <h2>Level one: the beginner Level</h2>
+    <h3 id="stepCount">Step Count = 0</h3>
+    <div class="big ">
+        <div class="sui">guess</div>
+        <div class="sui">0</div>
+        <div class="sui">1</div>
+        <div class="sui">2</div>
+        <div class="sui">A</div>
+        <div id="a0" class="griditem">0</div>
+        <div id="a1" class="griditem">1</div>
+        <div id="a2" class="griditem">2</div>
+        <div class="sui">B</div>
+        <div id="a3" class="griditem">3</div>
+        <div id="a4" class="griditem">4</div>
+        <div id="a5" class="griditem">5</div>
+        <div class="sui">C</div>
+        <div id="a6" class="griditem">6</div>
+        <div id="a7" class="griditem">7</div>
+        <div id="a8" class="griditem">8</div>
+</div>
+
+<button id="btn" onclick="inp()">Guess</button>
+<input id="userInp" placeholder="Enter Number"></input>
+
+<div id="winOrLossBox" style="display: none;">
+    <h4 id="winLoss">You Win</h4>
+    <hr>
+    <h4 id="step">Total step count - </h4>
+
+    <button class="btn1"><a href="index.html">Home</a></button>
+    <button class="btn1" onclick="relode()">Play Again</button>
+</div>
+<script src="js/l1.js"></script>
+</body>
+</html>

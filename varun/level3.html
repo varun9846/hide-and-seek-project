@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide And Seek</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100vh;
+            margin: 30px;
+            background-color: cornsilk;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(168, 38, 38);
+            font-size: 40px;
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: red underline;
+        }
+
+        h2 {
+            text-align: center;
+            color: rgb(41, 41, 134);
+            font-size: 20px;
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: red underline;
+
+        }
+
+        .topnav {
+            background-color: cornsilk;
+            overflow: hidden;
+        }
+
+        .topnav a {
+            float: left;
+            color: chocolate;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: green underline;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .big {
+            display: grid;
+            margin-left: 25%;
+            margin-top: 80px;
+            grid-template-columns: repeat(7,10%);
+            grid-template-rows: repeat(7, 10%);
+
+        }
+
+        .big .griditem {
+            padding: 22%;
+            background-color: #3a9450;
+            display: grid;
+        }
+
+        .griditem {
+            border: solid rgb(175, 10, 10);
+            text-align: center;
+            padding: 22%;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .sui {
+            border: 5px solid red;
+            padding: auto auto auto auto;
+            text-align: center;
+            justify-content: center;
+            padding: 22%;
+            font-size: 25px;
+            font-weight: bold;
+            color: rgb(184, 0, 175);
+            background-color: coral;
+        }
+        #gd{
+            justify-content: center;
+            color: rgb(56, 59, 219);
+            text-align: center;
+            padding-right: 120px;
+        }
+
+        #btn{
+    background-color: black;
+    width:100px;
+    height:40px;
+    border-radius: 10px;
+    color:aqua;
+    /* margin-top: 10px; */
+    margin-left: 20%;
+
+  }
+#userInp{
+  width: 100%;
+  height: 4vh;
+}
+
+  #winOrLossBox{
+    top: 35%;
+    left: 30%;
+    position: absolute;
+    width: 35%;
+    height: 40%;
+    background-color: #3a9450;
+    border-radius: 15px;
+    text-align: center;
+    padding: 1% 0 0 0;
+  }
+  #step{
+    margin-top: 15%;
+  }
+
+  .btn1{
+    margin-top: 10%;
+    width: 25%;
+    height: 15%;
+  }
+  .btn1 a{
+    text-decoration: none;
+  }
+    </style>
+</head>
+
+<body>
+    <h1> Hide And Seek Game</h1>
+    <nav class="topnav">
+
+        <a href="level1.html">Level-1 </a>
+        <a href="level2.html">Level-2 </a>
+        <a href="level3.html">Level-3 </a>
+
+    </nav>
+    <h2>Level Three: the Advance level </h2>
+    <h3 id="stepCount">Step Count = 0</h3>
+    <div class="big">
+        <div class="sui" id="gd">guess</div>
+        <div class="sui">0</div>
+        <div class="sui">1</div>
+        <div class="sui">2</div>
+        <div class="sui">3</div>
+        <div class="sui">4</div>
+        <div class="sui">5</div>
+
+        <div class="sui">A</div>
+        <div id="a0" class="griditem">0</div>
+        <div id="a1" class="griditem">1</div>
+        <div id="a2" class="griditem">2</div>
+        <div id="a3" class="griditem">3</div>
+        <div id="a4" class="griditem">4</div>
+        <div id="a5" class="griditem">5</div>
+
+        <div class="sui">B</div>
+        <div id="a6" class="griditem">6</div>
+        <div id="a7" class="griditem">7</div>
+        <div id="a8" class="griditem">8</div>
+        <div id="a9" class="griditem">9</div>
+        <div id="a10" class="griditem">10</div>
+        <div id="a11" class="griditem">11</div>
+
+        <div class="sui">C</div>
+        <div id="a12" class="griditem">12</div>
+        <div id="a13" class="griditem">13</div>
+        <div id="a14" class="griditem">14</div>
+        <div id="a15" class="griditem">15</div>
+        <div id="a16" class="griditem">16</div>
+        <div id="a17" class="griditem">17</div>
+
+        <div class="sui">D</div>
+        <div id="a18" class="griditem">18</div>
+        <div id="a19" class="griditem">19</div>
+        <div id="a20" class="griditem">20</div>
+        <div id="a21" class="griditem">21</div>
+        <div id="a22" class="griditem">22</div>
+        <div id="a23" class="griditem">23</div>
+
+        <div class="sui">E</div>
+        <div id="a24" class="griditem">24</div>
+        <div id="a25" class="griditem">25</div>
+        <div id="a26" class="griditem">26</div>
+        <div id="a27" class="griditem">27</div>
+        <div id="a28" class="griditem">28</div>
+        <div id="a29" class="griditem">29</div>
+
+        <div class="sui">F</div>
+        <div id="a30" class="griditem">30</div>
+        <div id="a31" class="griditem">31</div>
+        <div id="a32" class="griditem">32</div>
+        <div id="a33" class="griditem">33</div>
+        <div id="a34" class="griditem">34</div>
+        <div id="a35" class="griditem">35</div>
+        <input id="userInp" placeholder="Enter Number"></input>
+    <button id="btn" onclick="inp()">Guess</button>
+    </div>
+
+
+    <div id="winOrLossBox" style="display: none;">
+        <h4 id="winLoss">You Win</h4>
+        <hr>
+        <h4 id="step">Total step count - </h4>
+        <button class="btn1"><a href="index.html">Home</a></button>
+        <button class="btn1" onclick="relode()">Play Again</button>
+    </div>
+    <script src="js/l3.js"></script>
+</body>
+
+</html>

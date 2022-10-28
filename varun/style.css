@@ -1,0 +1,113 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-color:cornsilk;
+    position: relative;
+}
+h1{
+    text-align: center;
+    color: rgb(168, 38, 38);
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: red underline;
+}
+h2{
+    text-align: center;
+    color:rgb(41, 41, 134);
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: red underline;
+
+}
+.topnav{
+    background-color:cornsilk;
+  overflow: hidden;
+}
+.topnav a {
+    float: left;
+    color: chocolate;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: green underline;
+  }
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+ 
+.big{
+    display: grid;
+    margin-left: 30%;
+    margin-top: 80px;
+    grid-template-columns: repeat(4,20%);
+    grid-template-rows: repeat(4,20%);
+
+}
+.big .griditem{
+    padding: 3%;
+    background-color: #3a9450;
+    display: grid;
+}
+.griditem{
+    border:  solid rgb(175, 10, 10);
+    text-align: center;
+    /* padding:5%; */
+    font-size: 20px;
+    font-weight: bold;
+}
+.sui {
+    border: 5px solid red;
+    padding: auto auto auto auto;
+    text-align: center;
+    justify-content: center;
+    padding: 3%;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(184, 0, 175);
+    background-color: coral;
+  }
+  #btn{
+    background-color: black;
+    width:100px;
+    height:40px;
+    border-radius: 20px;
+    color:aqua;
+    margin-top: 10px;
+    margin-left: 560px;
+
+  }
+
+  #winOrLossBox{
+    top: 35%;
+    left: 30%;
+    position: absolute;
+    width: 35%;
+    height: 40%;
+    background-color: #3a9450;
+    border-radius: 15px;
+    text-align: center;
+    padding: 1% 0 0 0;
+  }
+  #step{
+    margin-top: 15%;
+  }
+
+  .btn1{
+    margin-top: 10%;
+    width: 25%;
+    height: 15%;
+  }
+  .btn1 a{
+    text-decoration: none;
+  }
